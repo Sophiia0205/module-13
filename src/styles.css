@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: hsl(0, 32%, 82%);
+}
+.container {
+  display: flex;
+}
+
+.image_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo-card :nth-child(odd) {
+  padding-right: 60px;
+}
+
+.search-form {
+  text-align: center;
+  width: 500px;
+  padding: 50px;
+  margin: 0px auto;
+}
+
+.load_button {
+  display: none;
+  height: 50px;
+  width: 180px;
+  background-color: hsl(0, 12%, 63%);
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin: 0px auto;
+  color: blanchedalmond;
+}
+
+#search-form input {
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+}
